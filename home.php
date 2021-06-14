@@ -188,6 +188,94 @@
         </p>
       </article>
 
+      <article class="article_content">
+          <h2 class="article_title cls">L'objet date</h2>
+          <pre>
+          <code class="box fdc">
+            <?php
+            $ladate = "14/07/2019";
+            $enString = mktime(strtotime($ladate));
+            echo "la semaine en question est : " . date('W', $enString);
+            ?>
+          </code>
+        </pre>
+          <p class="article_paragraph cls">
+          <figure>
+              <img src="assets/img/date1.png" alt="date php" class="fluid">
+          </figure>
+          </p>
+      </article>
+
+      <article class="article_content">
+          <h2 class="article_title cls">L'objet date : compte à rebourt</h2>
+          <pre>
+          <code class="box fdc">
+            <?php
+            $year = date('Y');
+            $ladate = mktime(0,0,1,1,1, $year);
+
+            if($ladate < time()) {
+                $ladate = mktime(1,0,0,1,1, ++$year);
+                $temps_restant = $ladate - time();
+            }
+                $minutes_restantes = $temps_restant / 60;
+                $heures_restantes = $minutes_restantes / 60;
+                $jours_restants = $heures_restantes / 24;
+
+                $sec_res = floor($temps_restant % 60);
+                $minutes_restantes = floor($minutes_restantes % 60);
+                $heures_restantes = floor($heures_restantes % 24);
+                $jours_restants = floor($jours_restants);
+
+            echo 'il reste ' . $jours_restants .' jours, ' . $heures_restantes . ' heures et ' . $minutes_restantes . ' minutes et '
+            . $sec_res . ' secondes';
+            ?>
+          </code>
+        </pre>
+          <p class="article_paragraph cls">
+          <figure>
+              <img src="assets/img/timers.png" alt="timers php" class="fluid">
+          </figure>
+          </p>
+      </article>
+
+
+      <article class="article_content">
+          <h2 class="article_title cls">L'objet date : années bissextile</h2>
+          <pre>
+          <code class="box fdc">
+            <?php
+            (function($years) {
+                $laDate = date("m-d", strtotime($years . "-02-29"));
+                $good = $years . " est bissextile";
+                $noGood = $years ." est non bissextile";
+                echo $laDate === "02-29" ? $good : $noGood;
+            })("1999");
+            ?>
+          </code>
+        </pre>
+          <p class="article_paragraph cls">
+          <figure>
+              <img src="assets/img/bissextile.png" alt="bissextile php" class="fluid">
+          </figure>
+          </p>
+      </article>
+
+      <article class="article_content">
+          <h2 class="article_title cls">L'objet date : années érronée</h2>
+          <pre>
+          <code class="box fdc">
+            <?php
+                echo "suivant..";
+            ?>
+          </code>
+        </pre>
+          <p class="article_paragraph cls">
+          <figure>
+              <img src="assets/img/noimage.png" alt=" php" class="fluid">
+          </figure>
+          </p>
+      </article>
 
   </section>
 </body>
