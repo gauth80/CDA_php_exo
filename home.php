@@ -266,17 +266,43 @@
           <pre>
           <code class="box fdc">
             <?php
-                echo "suivant..";
+                function verif($m, $d, $y) {
+                    if(checkdate($m,$d,$y)) {
+                        echo '<p class="code">date bonne</p>';
+                    } else {
+                        echo '<p class="code">date mauvaise</p>';
+                    }
+                }
+                verif(12, 32, 1999);
+                verif(12, 31, 1999);
+
             ?>
           </code>
         </pre>
           <p class="article_paragraph cls">
           <figure>
-              <img src="assets/img/noimage.png" alt=" php" class="fluid">
+              <img src="assets/img/checkdate.png" alt="checkdate php" class="fluid">
           </figure>
           </p>
       </article>
 
+      <article class="article_content">
+          <h2 class="article_title cls">L'objet date : date courrante</h2>
+          <pre>
+          <code class="box fdc">
+            <?php
+            (function($heure) {
+                    echo str_replace("/", "h", $heure);
+                })("11/25");
+            ?>
+          </code>
+        </pre>
+          <p class="article_paragraph cls">
+          <figure>
+              <img src="assets/img/lol.png" alt=" php" class="fluid">
+          </figure>
+          </p>
+      </article>
   </section>
 </body>
 </html>
