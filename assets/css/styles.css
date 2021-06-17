@@ -43,6 +43,11 @@ figure {
   overflow: auto;
   height:150px;
 }
+.box-fullHeight {
+  display: flex;
+  overflow: auto;
+  height:500px;
+}
 
 .code {
   line-height: 15px;
@@ -76,4 +81,65 @@ table {
 .th {
   border: 1px solid white;
   color:white;
+}
+/* form */
+.article_content-fullWidth {
+  margin:2%;
+  display: block;
+  width:94%;
+  box-shadow:0 3px 3px silver;
+  background-color: whitesmoke;
+}
+
+.form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 3% auto;
+}
+
+.form_border {
+  border: 1px solid teal;
+  border-radius: 8px 0 8px 0;
+}
+
+.form_title {
+  color:teal;
+  font-size:1rem;
+}
+.form_title:first-letter {
+  font-size: calc(100% + .5rem);
+}
+.form_title, .form_label {
+  padding-left:5%;
+}
+
+.label_input {
+  width: 80%;
+  text-indent:10px;
+  color:initial;
+  font-size: inherit;
+  left: 0px;
+  display: block;
+  position: relative;
+  transition: all .5s;
+}
+
+.label_input:focus-visible {
+  padding:10px;
+}
+
+.warning {
+  display: inherit;
+  transition: all .5s;
+  font-size:1rem;
+  color: brown;
+}
+
+.form_button {
+  max-width: min-content;
+  padding: 10px;
+  margin: 2.5%;
+  border-radius: 12%;
+  background-color: cornflowerblue;
 }
