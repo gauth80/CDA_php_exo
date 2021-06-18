@@ -1,22 +1,15 @@
 <?php
     // initial variables errors @String : void
-    $getErrorName = $getErrorSurname = $getErrorCity = $getErrorCGU = $getErrorDate = $getErrorMail = $getErrorQuestion = $getErrorStreet = $getErrorZipCode = '';
-    $name = $surname = $city = $date = $mail = $question = $street = $zipcode = '';
+    $getErrorName = $getErrorSurname  = '';
+    $name = $surname = '';
 
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         // get inputs
         $getName = trim($_POST['name']);
         $getSurname = trim($_POST['surname']);
-        /*$getCity = trim($_POST['city']);
-        $getDate = trim($_POST['date']);
-        $getMail = trim($_POST['mail']);
-        $getQuestion = trim($_POST['question']);
-        $getStreet = trim($_POST['street']);
-        $getZipCode = trim($_POST['zipcode']);*/
 
         // checked value user
-
         if(empty($getName)) {
             $getErrorName = 'Veuillez remplir le champs nom.';
         } elseif (!filter_var($getName, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z]*$/")))) {
@@ -44,12 +37,25 @@
 
         // check final
         if(empty($getErrorName) && empty($getErrorSurname)) {
-            $validate = true;
+            $query = 'INSERT INTO sh_users (us_name, us_surname) VALUE (:us_name, :us_surname)';
+            $dataSourceName = require_once('forForm/dsn.php');
+            $dataSourceName = connexion();
 
-            return false;
+            if($statement = $dataSourceName->prepare($query)) {
+                $statement = bindValue(':us_name', $name, PDO::PARAM_STR);
+                $statement = bindValue(':us_surname', $surname, PDO::PARAM_STR);
+                $statement->execute();
+
+            } else {
+                return false;
+            }
+
+            unset($statement);
+
         } else {
             return false;
         }
 
+        unset($dataSourceName);
 
     }

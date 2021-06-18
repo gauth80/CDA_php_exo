@@ -8,6 +8,15 @@
 + [Les fonctions | un lien](#fl)
 + [Les fonctions | sum( )](#fs)
 + [Les fonctions | password](#fp)
++ [Les Dates | semaine](#ds)
++ [Les Dates | cooldown](#dc)
++  [Les Dates | bissextile](#dx)
++  [Les Dates | validation](#dv)
++  [Les Fichiers | lire un fichier](#fr)
++  [Les Fichiers | pretty csv](#fp)
++  [Formulaire | Envoie de donnée](#form)
+
+
 
 ## <a id="supGlo">Super Global</a> :
 
@@ -56,3 +65,45 @@ _____
 ## <a id="fp">Les fonctions | password</a>
 
 ![Super Global](assets/img/pass.png)
+
+_____
+
+## <a id="ds">Les Dates | Semaine</a>
+
+![date semaine](assets/img/date_semaine.png)
+
+_____
+
+## <a id="dc">Les Dates | cooldown</a>
+
+![date cooldown](assets/img/cooldown.png)
+
+_____
+
+## <a id="dx">Les Dates | années bissextile</a>
+
+![date cooldown](assets/img/bissextile.png)
+
+_____
+
+## <a id="dv">Les Dates | check validitée date</a>
+
+![date cooldown](assets/img/date_erronée.png)
+
+_____
+
+## <a id="fr">Les Fichiers | Lire un fichier</a>
+
+![date cooldown](assets/img/readFile.png)
+
+_____
+
+## <a id="fp">Les Fichiers |  pretty ( )</a>
+
+![date cooldown](assets/img/prettyCsv.png)
+
+_____
+
+## <a id="form">Formulaire | Envoie de donnée</a>
+
+![form validation](assets/img/form.png)

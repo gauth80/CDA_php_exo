@@ -273,7 +273,10 @@
 							echo '<p class="code">date mauvaise</p>';
 						}
 					}
+					// fausse date
 					verif(12, 32, 1999);
+
+					// bonne date
 					verif(12, 31, 1999);
 
 				?>
@@ -359,22 +362,13 @@
                             <?php echo '<span class="warning">' . $getErrorSurname? : '' . '</span>';?>
                         </label>
 
-                        <label for="choix">Sujet :
-                            <select name="choix" id="request">
-                                <option value="commande">Mes commandes</option>
-                                <option value="question">Question sur un produit</option>
-                                <option value="reclamation">Réclamation</option>
-                                <option value="other">Autre</option>
-                            </select>
-                        </label>
                         <button class="form_button" type="submit">Envoyer</button>
-
                     </form>
 			  </code>
 			</pre>
 			  <p class="article_paragraph cls">
 			  <figure>
-				  <img src="assets/img/prettycsv.png" alt="pretty csv php" class="fluid">
+				  <img src="assets/img/form.png" alt="formulaire validation php" class="fluid">
 			  </figure>
 			  </p>
 		  </article>

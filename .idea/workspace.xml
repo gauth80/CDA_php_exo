@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5501c8c3-eadb-4418-8d6a-74061b328887" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/prettycsv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/readfile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctrl.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataRelated/data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forForm/valid.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/cooldown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/date_erronée.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/date_semaine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/filePretty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/form.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forForm/dsn.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/bissextile.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/bissextile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/readfile.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/readfile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forForm/valid.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resumée.md" beforeDir="false" afterPath="$PROJECT_DIR$/resumée.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +78,9 @@
       <workItem from="1623836112376" duration="1291000" />
       <workItem from="1623847031232" duration="4161000" />
       <workItem from="1623876693192" duration="9254000" />
+      <workItem from="1624028428343" duration="2652000" />
+      <workItem from="1624042835933" duration="1881000" />
+      <workItem from="1624051382756" duration="1744000" />
     </task>
     <servers />
   </component>
